@@ -1,0 +1,138 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body>header {
+    background-color: #7A8; 
+    margin: 0px;
+    padding: 30px;
+}
+
+nav a {
+    color: #7A8;
+    text-decoration: none;
+    font-size: medium;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: yellow;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20.5pt;
+    font-weight: normal; 
+}
+
+a[href='#top'] {
+    font-size: small;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav, ul{
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    font-size: large;
+    margin-right: 5px;
+    padding: 3px;
+    flex-grow: 1;
+    text-align: center;
+    background-color:beige;
+    padding: 10px;
+    border: 1px solid green;    
+}
+
+#web img {
+    border: 2px solid green;
+    margin: 20px;
+}
+
+#web ul {
+    text-align: center;
+}
+
+#talks h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+    margin: 0;
+    color: darkred;
+    border-top: 2px solid darkred;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+#talks img {
+    float: right;
+    margin-top: -33px;
+}
+
+#articles li {
+    margin-bottom: 10px;
+}
+
+body {
+    transition: background 3s;
+}
+
+/* Media Queries */
+
+@media (orientation: landscape) {
+
+    body {
+        background: yellow;
+    } 
+
+    body>header {
+        background-color: #A78;
+    }
+}
+
+@media (min-width: 800px) {
+    a[href^='tel:'] {
+        display: none;
+    }
+}
+
+
+/* Between 400px and 800px */
+@media (min_width: 400px) and (max-width: 800px) {
+
+}
+
+@media (max-width: 450px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: small;
+    }
+
+    #web img {
+        width: 100%;
+    }
+
+    #talks img {
+        width: 40px;
+        height: 20;
+        float: none;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>HTML5 Day Conference</title>
+
+<header>
+    <img src="images/logo.png" height="50" alt="HTML5 Conference logo">
+    <h1>HTML5 Day Conference</h1>
+    <p>Petra, Jordan. November, 4th 2020</p>
+</header>
+
+<main>
+    <figure>
+        <!-- <img src="images/animation.gif" width="90%" alt="Image animation form the conference"> -->
+        <video loop muted playsinline webkit-playsinline autoplay width="90%" src="resources/animation.mp4"></video>
+        <figcaption>Images from previous editions of conference</figcaption>
+    </figure>
+
+    <h2>The conference in images</h2>
+
+    <ul>
+        <li>
+            <img src="images/event1-1x.jpg" srcset="images/event1-1x.jpg 1x, images/event1-2x.jpg 2x, images/event1-3x.jpg 3x" width="300" height="81" alt="Event Picture">
+        </li>
+        <li>
+            <img src="images/event2-1x.jpg" srcset="images/event2-1x.jpg 1x, images/event2-2x.jpg 2x, images/event2-3x.jpg 3x" width="300" height="255" alt="Event Picture">
+        </li>
+        <li>
+            <img src="images/event3-1x.jpg" srcset="images/event3-1x.jpg 1x, images/event3-2x.jpg 2x, images/event3-3x.jpg 3x" width="300" height="183" alt="Event Picture">
+        </li>
+    </ul>
+
+
+    <h2>Listen to the Welcome Message</h2>
+    <audio controls preload="metadata" src="resources/welcome.mp3" width="50%" height="50"></audio>
+
+    <h2>About Petra</h2>
+    <video controls poster="images/event3-1x.jpg" width="100%">
+        <source src="resources/movie.mp4" type="video/mp4">
+        <source src="resources/movie.webm" type="video/webm">
+    </video>
+
+    <h2>Schedule</h2>
+
+    <table>
+        <caption>Conference Sehedule by Room</caption>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Conference Name</th>
+                <th>Room Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9am</d>
+                <td>Keynote</td>
+                <td>Indiana Jones</td>
+             </tr>
+            <tr>
+                <td>12pm</td>
+                <td>Lunch</td>
+                <td>Restaurant</td>
+             </tr>
+            <tr>
+                <td>2pm</td>
+                <td>CSS Training</td>
+                <td>Indiana Jones</td>
+             </tr>
+            <tr>
+                <td rowspan="2">4pm</td>
+                <td rowspan="2">Javascript Training</td>
+                <td>Indiana Jones</td>
+             </tr>
+            <tr>
+                <td>Harrison Ford</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>9pm</td>
+                <td colspan="2">End of the conference</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</main>
+
+<footer>
+    <p>If you have any questions, contact us on Twitter.</p>
+</footer>
