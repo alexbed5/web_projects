@@ -1,0 +1,42 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="styles.css">
+<script src="geo.js"></script>
+<script src="script.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWwocbzhUJN0R6gNbXXgizGf6sR2U9lhY&callback=initMap">&callback=initMap">
+</script>
+
+<title>Restaurant Finder</title>
+
+<header>
+    <nav>
+       <ul>
+          <li><a id="lnkAll"  href="#">All Restaurants</a></li>
+          <li><a id="lnkNear" href="#">Near Me</a></li>
+          <li><a id="lnkMap"  href="#">Show Map</a></li>
+       </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Restaurant Finder</h1>
+
+    <section id="mapContainer" class="hidden">
+        <h2>Map</h2>
+        <div id="map"></div>
+    </section>
+
+    <section id="list">
+        <h2 id="listTitle">No Results</h2>
+        <ul>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    
+</footer>
