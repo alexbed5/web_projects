@@ -1,0 +1,75 @@
+body {
+    background: gray;
+    font-family: Courier New, Courier, monospace
+}
+
+.hidden {
+    opacity: 0;
+    background-color: black;
+}
+
+.visible {
+    opacity: 1;
+    background-color:  white;
+}
+
+.over {
+    background-color: yellow;
+    transform: scale(1.5) translateY(100px);
+}
+
+main {
+    margin: 0;
+    padding: 15px 0 20px 20px;
+    height: 100px;
+    width: 340px;
+    margin: auto;
+  /*  transition: all 3s; */
+}
+
+#logo {
+    float:right;
+    margin: 0;
+    transition: transform 0.5s;
+}
+
+.upsidedown {
+    transform: rotate(180deg);
+}
+
+h1, #subtitle {
+    margin: 0;
+}
+
+h1 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    animation: animation-title 4s;
+}
+
+@keyframes animation-title {
+
+    25% {
+        transform: translate(-500px, -500px);
+    }
+
+    50% {
+        opacity: 0;
+        color: red;
+        transform: scale(1.4)
+    }
+
+    75% {
+        color: green;
+        transform: scale(1);
+    }
+}
+
+#subtitle {
+    background-color: black;
+    color: white;
+    float: left;
+    padding: 5px;
+    margin-top: 5px;
+}
+
